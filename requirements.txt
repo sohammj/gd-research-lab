@@ -1,0 +1,6 @@
+google-generativeai 
+autogen-agentchat 
+autogen
+asyncio
+flask
+pyautogen

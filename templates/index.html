@@ -1,0 +1,316 @@
+<!-- index.html -->
+{% extends "base.html" %}
+
+{% block content %}
+<div class="space-y-8">
+    <!-- Header -->
+    <div class="text-center">
+        <h1 class="text-4xl font-bold text-white mb-4">
+            <i class="fas fa-robot mr-3"></i>
+            Agentic Research Lab
+        </h1>
+        <p class="text-xl text-white/80 mb-8">
+            Multi-Agent AI System powered by AutoGen & Gemini
+        </p>
+
+        <!-- Agent Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-4 mb-8">
+            <div class="agent-card glass-effect rounded-lg p-4">
+                <i class="fas fa-search text-blue-400 text-2xl mb-2"></i>
+                <h3 class="text-white font-semibold text-sm">Critique Expert</h3>
+                <p class="text-white/70 text-xs">Scores & analyzes</p>
+            </div>
+            <div class="agent-card glass-effect rounded-lg p-4">
+                <i class="fas fa-expand-arrows-alt text-green-400 text-2xl mb-2"></i>
+                <h3 class="text-white font-semibold text-sm">Expansion Specialist</h3>
+                <p class="text-white/70 text-xs">Expands ideas</p>
+            </div>
+            <div class="agent-card glass-effect rounded-lg p-4">
+                <i class="fas fa-binoculars text-purple-400 text-2xl mb-2"></i>
+                <h3 class="text-white font-semibold text-sm">Gap Finder</h3>
+                <p class="text-white/70 text-xs">Identifies opportunities</p>
+            </div>
+            <div class="agent-card glass-effect rounded-lg p-4">
+                <i class="fas fa-books text-yellow-400 text-2xl mb-2"></i>
+                <h3 class="text-white font-semibold text-sm">Resource Librarian</h3>
+                <p class="text-white/70 text-xs">Finds resources</p>
+            </div>
+            <div class="agent-card glass-effect rounded-lg p-4">
+                <i class="fas fa-clipboard-list text-red-400 text-2xl mb-2"></i>
+                <h3 class="text-white font-semibold text-sm">Research Planner</h3>
+                <p class="text-white/70 text-xs">Creates roadmaps</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- API Key Section -->
+    <div id="api-section" class="glass-effect rounded-xl p-6">
+        <h2 class="text-2xl font-semibold text-white mb-4">
+            <i class="fas fa-key mr-2"></i>Setup Your API Key
+        </h2>
+        <div class="flex gap-4">
+            <input type="password" id="api-key" placeholder="Enter your Gemini API Key"
+                class="flex-1 px-4 py-2 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-blue-400">
+            <button onclick="setApiKey()"
+                class="px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors">
+                <i class="fas fa-check mr-2"></i>Set Key
+            </button>
+        </div>
+        <p class="text-white/60 text-sm mt-2">
+            Get your API key from <a href="https://makersuite.google.com/app/apikey" target="_blank"
+                class="text-blue-300 hover:underline">Google AI Studio</a>
+        </p>
+    </div>
+
+    <!-- Research Form -->
+    <div id="research-form" class="glass-effect rounded-xl p-6" style="display: none;">
+        <h2 class="text-2xl font-semibold text-white mb-4">
+            <i class="fas fa-lightbulb mr-2"></i>Your Research Idea
+        </h2>
+
+        <div class="space-y-4">
+            <div>
+                <label class="block text-white text-sm font-medium mb-2">Research Title</label>
+                <input type="text" id="title" placeholder="e.g., AI-Powered Climate Change Prediction"
+                    class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-blue-400">
+            </div>
+
+            <div>
+                <label class="block text-white text-sm font-medium mb-2">Description</label>
+                <textarea id="description" rows="4" placeholder="Describe your research idea in detail..."
+                    class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-blue-400"></textarea>
+            </div>
+
+            <div>
+                <label class="block text-white text-sm font-medium mb-2">Domain</label>
+                <input type="text" id="domain" placeholder="e.g., AI + Climate Science, Healthcare + ML"
+                    class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-blue-400">
+            </div>
+
+            <button onclick="analyzeIdea()" id="analyze-btn"
+                class="w-full py-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white rounded-lg transition-all duration-300 transform hover:scale-105">
+                <i class="fas fa-rocket mr-2"></i>Analyze with AI Agents
+            </button>
+        </div>
+    </div>
+
+    <!-- Loading -->
+    <div id="loading" class="glass-effect rounded-xl p-8 text-center" style="display: none;">
+        <div class="animate-spin text-4xl text-blue-400 mb-4">
+            <i class="fas fa-cog"></i>
+        </div>
+        <h3 class="text-xl font-semibold text-white mb-2">AI Agents Working...</h3>
+        <p class="text-white/70" id="loading-text">Initializing analysis...</p>
+
+        <div class="mt-6 space-y-2">
+            <div id="step-1" class="flex items-center justify-center text-white/50">
+                <i class="fas fa-circle-notch animate-spin mr-2"></i>CritiqueExpert analyzing...
+            </div>
+            <div id="step-2" class="flex items-center justify-center text-white/50">
+                <i class="fas fa-circle mr-2"></i>ExpansionSpecialist expanding...
+            </div>
+            <div id="step-3" class="flex items-center justify-center text-white/50">
+                <i class="fas fa-circle mr-2"></i>GapFinder searching...
+            </div>
+            <div id="step-4" class="flex items-center justify-center text-white/50">
+                <i class="fas fa-circle mr-2"></i>ResourceLibrarian researching...
+            </div>
+            <div id="step-5" class="flex items-center justify-center text-white/50">
+                <i class="fas fa-circle mr-2"></i>ResearchPlanner planning...
+            </div>
+        </div>
+    </div>
+
+    <!-- Results -->
+    <div id="results" class="space-y-6" style="display: none;">
+        <div class="flex justify-between items-center">
+            <h2 class="text-2xl font-semibold text-white">
+                <i class="fas fa-chart-line mr-2"></i>Analysis Results
+            </h2>
+            <button onclick="downloadResults()"
+                class="px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg transition-colors">
+                <i class="fas fa-download mr-2"></i>Download JSON
+            </button>
+        </div>
+
+        <div id="results-content" class="space-y-6">
+            <!-- Results will be populated by JavaScript -->
+        </div>
+
+        <div class="text-center">
+            <button onclick="resetForm()"
+                class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors">
+                <i class="fas fa-plus mr-2"></i>Analyze Another Idea
+            </button>
+        </div>
+    </div>
+</div>
+
+<script>
+    let currentSessionId = null;
+
+    function setApiKey() {
+        const apiKey = document.getElementById('api-key').value.trim();
+
+        if (!apiKey) {
+            showNotification('Please enter your API key', 'error');
+            return;
+        }
+
+        fetch('/api/set-key', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ api_key: apiKey })
+        })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    showNotification('API key validated successfully!', 'success');
+                    document.getElementById('api-section').style.display = 'none';
+                    document.getElementById('research-form').style.display = 'block';
+                } else {
+                    showNotification(data.message, 'error');
+                }
+            })
+            .catch(error => {
+                showNotification('Error validating API key', 'error');
+                console.error(error);
+            });
+    }
+
+    function analyzeIdea() {
+        const title = document.getElementById('title').value.trim();
+        const description = document.getElementById('description').value.trim();
+        const domain = document.getElementById('domain').value.trim();
+
+        if (!title || !description || !domain) {
+            showNotification('Please fill in all fields', 'error');
+            return;
+        }
+
+        // Show loading
+        document.getElementById('research-form').style.display = 'none';
+        document.getElementById('loading').style.display = 'block';
+
+        // Animate loading steps
+        setTimeout(() => updateLoadingStep(1), 1000);
+        setTimeout(() => updateLoadingStep(2), 3000);
+        setTimeout(() => updateLoadingStep(3), 5000);
+        setTimeout(() => updateLoadingStep(4), 7000);
+        setTimeout(() => updateLoadingStep(5), 9000);
+
+        fetch('/api/analyze', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ title, description, domain })
+        })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('loading').style.display = 'none';
+
+                if (data.success) {
+                    currentSessionId = data.session_id;
+                    displayResults(data.results);
+                    showNotification('Analysis completed!', 'success');
+                } else {
+                    showNotification(data.message, 'error');
+                    document.getElementById('research-form').style.display = 'block';
+                }
+            })
+            .catch(error => {
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('research-form').style.display = 'block';
+                showNotification('Analysis failed', 'error');
+                console.error(error);
+            });
+    }
+
+    function updateLoadingStep(step) {
+        // Reset all steps
+        for (let i = 1; i <= 5; i++) {
+            const element = document.getElementById(`step-${i}`);
+            const icon = element.querySelector('i');
+            icon.className = 'fas fa-circle mr-2';
+            element.className = 'flex items-center justify-center text-white/50';
+        }
+
+        // Update current step
+        const currentStep = document.getElementById(`step-${step}`);
+        const currentIcon = currentStep.querySelector('i');
+        currentIcon.className = 'fas fa-circle-notch animate-spin mr-2';
+        currentStep.className = 'flex items-center justify-center text-white';
+
+        // Mark completed steps
+        for (let i = 1; i < step; i++) {
+            const completedStep = document.getElementById(`step-${i}`);
+            const completedIcon = completedStep.querySelector('i');
+            completedIcon.className = 'fas fa-check-circle mr-2 text-green-400';
+            completedStep.className = 'flex items-center justify-center text-green-400';
+        }
+    }
+
+    function displayResults(results) {
+        const agents = [
+            { name: 'CritiqueExpert', icon: 'fas fa-search', color: 'blue' },
+            { name: 'ExpansionSpecialist', icon: 'fas fa-expand-arrows-alt', color: 'green' },
+            { name: 'GapFinder', icon: 'fas fa-binoculars', color: 'purple' },
+            { name: 'ResourceLibrarian', icon: 'fas fa-books', color: 'yellow' },
+            { name: 'ResearchPlanner', icon: 'fas fa-clipboard-list', color: 'red' }
+        ];
+
+        let html = `
+        <div class="glass-effect rounded-xl p-6 mb-6">
+            <h3 class="text-xl font-semibold text-white mb-4">Research Overview</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-white">
+                <div><strong>Title:</strong> ${results.title}</div>
+                <div><strong>Domain:</strong> ${results.domain}</div>
+                <div><strong>Analyzed:</strong> ${new Date(results.timestamp).toLocaleString()}</div>
+            </div>
+            <div class="mt-4 text-white/80">
+                <strong>Description:</strong> ${results.description}
+            </div>
+        </div>
+    `;
+
+        agents.forEach(agent => {
+            const response = results.agent_responses[agent.name] || 'No response';
+            html += `
+            <div class="glass-effect rounded-xl p-6">
+                <h3 class="text-xl font-semibold text-white mb-4">
+                    <i class="${agent.icon} text-${agent.color}-400 mr-2"></i>
+                    ${agent.name.replace(/([A-Z])/g, ' $1').trim()}
+                </h3>
+                <div class="text-white/90 whitespace-pre-wrap">${response}</div>
+            </div>
+        `;
+        });
+
+        document.getElementById('results-content').innerHTML = html;
+        document.getElementById('results').style.display = 'block';
+    }
+
+    function downloadResults() {
+        if (currentSessionId) {
+            window.open(`/api/download/${currentSessionId}`, '_blank');
+        } else {
+            showNotification('No results to download', 'error');
+        }
+    }
+
+    function resetForm() {
+        document.getElementById('results').style.display = 'none';
+        document.getElementById('research-form').style.display = 'block';
+        document.getElementById('title').value = '';
+        document.getElementById('description').value = '';
+        document.getElementById('domain').value = '';
+        currentSessionId = null;
+    }
+
+    // Enter key support
+    document.addEventListener('DOMContentLoaded', function () {
+        document.getElementById('api-key').addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') setApiKey();
+        });
+    });
+</script>
+{% endblock %}
