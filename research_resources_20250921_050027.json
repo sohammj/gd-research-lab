@@ -1,0 +1,374 @@
+{
+  "research_info": {
+    "topic": "emplyee asstrition in tech industry",
+    "description": "Employee attrition refers to the gradual reduction of a company’s workforce as employees leave through resignations, retirements, or other voluntary and involuntary exits without being immediately replaced. It can signal natural turnover in an organization, but high attrition often points to deeper issues such as poor job satisfaction, lack of career growth, inadequate compensation, or workplace culture challenges. Understanding and analyzing attrition helps organizations improve retention strategies, reduce hiring costs, and maintain productivity.",
+    "input_files": [],
+    "timestamp": "2025-09-21T04:59:12.756827"
+  },
+  "resources": {
+    "papers": [
+      {
+        "title": "The measurement of organizational commitment",
+        "url": "https://www.sciencedirect.com/science/article/pii/0001879179900721",
+        "description": "… Throughout the various studies, commitment has been … examination of the organizational commitment of professionals … It is with this second approach to organizational commitment …",
+        "authors": "RT Mowday, RM Steers, LW Porter - Journal of vocational behavior, 1979 - Elsevier",
+        "year": "",
+        "citations": 19312,
+        "venue": "",
+        "source": "Google Scholar"
+      },
+      {
+        "title": "A three-component conceptualization of organizational commitment",
+        "url": "https://www.semanticscholar.org/paper/b7d94f5fd9a6c512ba53d3a6398acc5782083c99",
+        "description": "No abstract available",
+        "authors": "John P. Meyer, Natalie J. Allen",
+        "year": 1991,
+        "citations": 10692,
+        "venue": "",
+        "types": null,
+        "source": "Semantic Scholar"
+      },
+      {
+        "title": "The Measurement of Organizational Commitment.",
+        "url": "https://www.semanticscholar.org/paper/58bdf90287bc4ae35be28614380a71969cc43f26",
+        "description": "No abstract available",
+        "authors": "R. Mowday, Richard M. Steers, L. Porter",
+        "year": 1979,
+        "citations": 9010,
+        "venue": "",
+        "types": [
+          "Review"
+        ],
+        "source": "Semantic Scholar"
+      },
+      {
+        "title": "A review and meta-analysis of the antecedents, correlates, and consequences of organizational commitment",
+        "url": "https://www.semanticscholar.org/paper/42509d42b57f561303590db92b4f22a8060b9397",
+        "description": "No abstract available",
+        "authors": "J. Mathieu, Dennis M. Zajac",
+        "year": 1990,
+        "citations": 6556,
+        "venue": "",
+        "types": [
+          "Review"
+        ],
+        "source": "Semantic Scholar"
+      },
+      {
+        "title": "Job Satisfaction and Organizational Commitment as Predictors of Organizational Citizenship and In-Role Behaviors",
+        "url": "https://www.semanticscholar.org/paper/1dd57112a435f9494c45d2fb12880219b9e3cf8e",
+        "description": "No abstract available",
+        "authors": "L. J. Williams, S. Anderson",
+        "year": 1991,
+        "citations": 6208,
+        "venue": "",
+        "types": [
+          "JournalArticle",
+          "Review"
+        ],
+        "source": "Semantic Scholar"
+      },
+      {
+        "title": "Review and conceptual analysis of the employee turnover process.",
+        "url": "https://psycnet.apa.org/record/1979-29973-001",
+        "description": "… Research on employee turnover since the Porter and Steers analysis of the literature … related to turnover. Generally, however, less than 20% of the variance in turnover is explained. …",
+        "authors": "WH Mobley, RW Griffeth, HH Hand… - Psychological …, 1979 - psycnet.apa.org",
+        "year": "",
+        "citations": 4789,
+        "venue": "",
+        "source": "Google Scholar"
+      },
+      {
+        "title": "A Meta-Analysis of Antecedents and Correlates of Employee Turnover: Update, Moderator Tests, and Research Implications for the Next Millennium",
+        "url": "https://www.semanticscholar.org/paper/69d737be9a25e9174343ce9e8b6123fce2d1f0f9",
+        "description": "No abstract available",
+        "authors": "R. W. Griffeth, P. Hom, S. Gaertner",
+        "year": 2000,
+        "citations": 4401,
+        "venue": "",
+        "types": [
+          "JournalArticle",
+          "Review"
+        ],
+        "source": "Semantic Scholar"
+      },
+      {
+        "title": "A review and reconceptualization of organizational commitment",
+        "url": "https://journals.aom.org/doi/abs/10.5465/amr.1985.4278960",
+        "description": "… This paper argues that current, global conceptions of organizational commitment may be deficient in several respects. A review of macro approaches to the nature of organization, as …",
+        "authors": "AE Reichers - Academy of management review, 1985 - journals.aom.org",
+        "year": "",
+        "citations": 4079,
+        "venue": "",
+        "source": "Google Scholar"
+      },
+      {
+        "title": "Causes of employee turnover: A test of the Mobley, Griffeth, Hand, and Meglino model.",
+        "url": "https://psycnet.apa.org/journals/apl/67/1/53/",
+        "description": "… portunities, intention of quitting the job, and turnover. Two variables were added to those in … of intention to quit or turnover, or as a moderator. Turnover, or employee withdrawal, is a …",
+        "authors": "CE Michaels, PE Spector - Journal of applied psychology, 1982 - psycnet.apa.org",
+        "year": "",
+        "citations": 1836,
+        "venue": "",
+        "source": "Google Scholar"
+      },
+      {
+        "title": "One hundred years of employee turnover theory and research.",
+        "url": "https://psycnet.apa.org/record/2017-03604-001",
+        "description": "… We review seminal publications on employee turnover during the 100-year … to the turnover literature. We first describe how the earliest papers examined practical methods for turnover …",
+        "authors": "PW Hom, TW Lee, JD Shaw… - Journal of applied …, 2017 - psycnet.apa.org",
+        "year": "",
+        "citations": 1703,
+        "venue": "",
+        "source": "Google Scholar"
+      },
+      {
+        "title": "Commitment before and after: An evaluation and reconceptualization of organizational commitment",
+        "url": "https://www.sciencedirect.com/science/article/pii/S1053482207000265",
+        "description": "… The timing of commitment distinguishes between commitment propensity, which develops … organization and organizational commitment, which develops after entry into the organization. …",
+        "authors": "A Cohen - Human resource management review, 2007 - Elsevier",
+        "year": "",
+        "citations": 1477,
+        "venue": "",
+        "source": "Google Scholar"
+      },
+      {
+        "title": "A review of the literature on employee turnover",
+        "url": "http://ithuteng.ub.bw/handle/10311/1154",
+        "description": "… organisations to ensure that there is employee continuity in their organisations to … employee turnover, effects and forwards some strategies on how to minimize employee turnover …",
+        "authors": "H Ongori - 2007 - ithuteng.ub.bw",
+        "year": "",
+        "citations": 1246,
+        "venue": "",
+        "source": "Google Scholar"
+      },
+      {
+        "title": "Organizational commitment",
+        "url": "https://books.google.com/books?hl=en&lr=&id=oJItBgAAQBAJ&oi=fnd&pg=PA289&dq=Organizational+Commitment&ots=hxw3l3RwS1&sig=mz4X8Daoqci2lSw_vRsDhH_Vho4",
+        "description": "… focusing specifically on organizational commitment and its … theory and research pertaining to organizational commitment. I will start … for the direction of commitment research in the future. …",
+        "authors": "JP Meyer, NJ Allen - … human resource management: A reader for …, 2001 - books.google.com",
+        "year": "",
+        "citations": 580,
+        "venue": "",
+        "source": "Google Scholar"
+      },
+      {
+        "title": "Predicting and explaining employee turnover intention",
+        "url": "https://www.semanticscholar.org/paper/dda64084a0cb92970b8688b87688839ba28112ed",
+        "description": "Turnover intention is an employee’s reported willingness to leave her organization within a given period of time and is often used for studying actual employee turnover. Since employee turnover can ha...",
+        "authors": "Matilde Lazzari, José Manuel Saiz-Alvarez, Salvatore Ruggieri",
+        "year": 2022,
+        "citations": 116,
+        "venue": "International Journal of Data Science and Analysis",
+        "types": [
+          "JournalArticle",
+          "Review"
+        ],
+        "source": "Semantic Scholar"
+      },
+      {
+        "title": "Analyzing The Employee Turnover by Using Decision Tree Algorithm",
+        "url": "https://www.semanticscholar.org/paper/1684bedf31f4d1ed1f1051a5af03ae661874292a",
+        "description": "In knowledge-based organizations, employee turnover is a significant challenge. Frequently, a company's competitive advantage can be traced back to the tacit knowledge of its employees, which is lost ...",
+        "authors": "S. Ahmed, A. Ahmed, S. J. Jwmaa",
+        "year": 2023,
+        "citations": 54,
+        "venue": "2023 5th International Congress on Human-Computer Interaction, Optimization and Robotic Applications (HORA)",
+        "types": null,
+        "source": "Semantic Scholar"
+      },
+      {
+        "title": "Factors impacting employee turnover intentions among professionals in Sri Lankan startups",
+        "url": "https://www.semanticscholar.org/paper/34844a9234118052e6896230656b1fd0853e2eee",
+        "description": "Employee turnover is one of the topical issues worldwide. The impact of factors affecting employee turnover varies occasionally and new factors are considered. Many countries have examined various fac...",
+        "authors": "Lakshmi Kanchana, Ruwan Jayathilaka",
+        "year": 2023,
+        "citations": 43,
+        "venue": "PLoS ONE",
+        "types": [
+          "JournalArticle"
+        ],
+        "source": "Semantic Scholar"
+      }
+    ],
+    "datasets": [],
+    "code_repos": [
+      {
+        "title": "mrc03/IBM-HR-Analytics-Employee-Attrition-Performance",
+        "url": "https://github.com/mrc03/IBM-HR-Analytics-Employee-Attrition-Performance",
+        "description": "The IBM HR Analytics Employee Attrition & Performance dataset from the Kaggle. I have first performed Exploratory Data Analysis on the data using  various libraries like pandas,seaborn,matplotlib etc.. Then I have plotted used feature selection techniques like RFE to select the features.  The data is then oversampled using the SMOTE technique in order to deal with the imbalanced classes. Also the data is then scaled for better performance. Lastly I have trained many ML models from the scikit-learn library for predictive modelling and compared the performance using Precision, Recall and other metrics.",
+        "stars": 42,
+        "forks": 25,
+        "language": "Jupyter Notebook",
+        "updated": "2025-09-18T04:50:32Z",
+        "topics": [],
+        "source": "GitHub"
+      },
+      {
+        "title": "shantanu1109/IBM-HR-Analytics-Employee-Attrition-and-Performance-Prediction",
+        "url": "https://github.com/shantanu1109/IBM-HR-Analytics-Employee-Attrition-and-Performance-Prediction",
+        "description": "In this project, we enlisted the numerical and categorical attributes present in the publicly available dataset. Missing values were dropped to give better insights in data analysis. ANOVA and Chi-Square tests were carried out during statistical analysis. Machine Learning algo's were applied to understand, manage, and mitigate employee attrition.",
+        "stars": 25,
+        "forks": 2,
+        "language": "Jupyter Notebook",
+        "updated": "2025-08-04T21:59:24Z",
+        "topics": [
+          "data-analytics",
+          "data-science",
+          "data-visualization",
+          "machine-learning",
+          "performance-metrics",
+          "python-programming",
+          "statistical-analysis"
+        ],
+        "source": "GitHub"
+      },
+      {
+        "title": "Okes2024/Employee-Attrition-Prediction-Using-HR-Data",
+        "url": "https://github.com/Okes2024/Employee-Attrition-Prediction-Using-HR-Data",
+        "description": "This project uses synthetic HR data to predict employee attrition through data analysis and machine learning. It explores factors influencing employee turnover and helps HR departments make data-driven retention strategies.",
+        "stars": 18,
+        "forks": 0,
+        "language": "Jupyter Notebook",
+        "updated": "2025-09-02T16:10:31Z",
+        "topics": [],
+        "source": "GitHub"
+      },
+      {
+        "title": "Technocolabs100/AttritionForecast-Analysis-and-Prediction",
+        "url": "https://github.com/Technocolabs100/AttritionForecast-Analysis-and-Prediction",
+        "description": "This project aims to provide insights into the factors influencing employee attrition and predict which employees are likely to leave the company.",
+        "stars": 15,
+        "forks": 36,
+        "language": null,
+        "updated": "2025-04-25T19:17:41Z",
+        "topics": [],
+        "source": "GitHub"
+      },
+      {
+        "title": "Junaid388/Attrition_Prediction",
+        "url": "https://github.com/Junaid388/Attrition_Prediction",
+        "description": "Employee turnover (attrition) is a major cost to an organization, and predicting turnover is at the forefront of needs of Human Resources (HR) in many organizations. Until now the mainstream approach has been to use logistic regression or survival curves to model employee attrition. However, with advancements in machine learning (ML), we can now get both better predictive performance and better explanations of what critical features are linked to employee attrition. In this post, we’ll use two cutting edge techniques.",
+        "stars": 11,
+        "forks": 5,
+        "language": "R",
+        "updated": "2024-02-08T20:09:29Z",
+        "topics": [],
+        "source": "GitHub"
+      },
+      {
+        "title": "Technocolabs100/Acme-AttritionForecast-Analysis-and-Prediction",
+        "url": "https://github.com/Technocolabs100/Acme-AttritionForecast-Analysis-and-Prediction",
+        "description": "This project aims to provide insights into the factors influencing employee attrition and predict which employees are likely to leave the company.",
+        "stars": 10,
+        "forks": 32,
+        "language": null,
+        "updated": "2025-04-14T11:19:51Z",
+        "topics": [],
+        "source": "GitHub"
+      },
+      {
+        "title": "notanoxymoron/Employee-Turnover-Prediction",
+        "url": "https://github.com/notanoxymoron/Employee-Turnover-Prediction",
+        "description": "A case study/project in prescriptive analytics to understand why employees leave a company and applying various machine learning models to predict the next leaver",
+        "stars": 8,
+        "forks": 4,
+        "language": "Jupyter Notebook",
+        "updated": "2025-01-15T06:36:28Z",
+        "topics": [
+          "machine-learning",
+          "predictive-analytics"
+        ],
+        "source": "GitHub"
+      },
+      {
+        "title": "neerajdheeman/Employee-turnover-prediction",
+        "url": "https://github.com/neerajdheeman/Employee-turnover-prediction",
+        "description": "The employee turnover rate prediction ML model is a statistical tool that uses machine learning algorithms to forecast the likelihood of an employee leaving a company within a specific timeframe. This model is designed to analyze various factors that contribute to employee attrition, including job satisfaction, compensation, work-life balance, and ",
+        "stars": 5,
+        "forks": 3,
+        "language": "Jupyter Notebook",
+        "updated": "2025-08-25T10:32:10Z",
+        "topics": [
+          "classification-algorithm",
+          "data-science",
+          "data-visualization",
+          "datacleaning",
+          "feature-engineering",
+          "feature-selection",
+          "machine-learning",
+          "numpy-arrays",
+          "pandas-dataframe"
+        ],
+        "source": "GitHub"
+      },
+      {
+        "title": "sandeepyadav10011995/Employee-Attrition-Prediction-Model",
+        "url": "https://github.com/sandeepyadav10011995/Employee-Attrition-Prediction-Model",
+        "description": "Bill Gates was once quoted as saying, \"You take away our top 20 employees and we [Microsoft] become a mediocre company\". This statement by Bill Gates took our attention to one of the major problems of employee attrition at workplaces. Employee attrition (turnover) causes a significant cost to any organization which may later on effect its overall efficiency. As per CompData Surveys, over the past five years, total turnover has increased from 15.1 percent to 18.5 percent. For any organization, finding a well trained and experienced employee is a complex task, but it’s even more complex to replace such employees. This not only increases the significant Human Resource (HR) cost, but also impacts the market value of an organization. Despite these facts and ground reality, there is little attention to the literature, which has been seeded to many misconceptions between HR and Employees. Therefore, the aim of this paper is to provide a framework for predicting the employee churn by analyzing the employee’s precise behaviors and attributes using classification techniques.",
+        "stars": 5,
+        "forks": 0,
+        "language": "Jupyter Notebook",
+        "updated": "2025-03-13T13:28:49Z",
+        "topics": [
+          "adaboost-learning",
+          "decision-tree-classifier",
+          "employee-attrition",
+          "logi",
+          "machine-learning",
+          "mnist",
+          "neural-network",
+          "random-forest",
+          "sklearn",
+          "svm-classifier"
+        ],
+        "source": "GitHub"
+      },
+      {
+        "title": "sonalishanbhag28/Employee-Attrition-Predictor",
+        "url": "https://github.com/sonalishanbhag28/Employee-Attrition-Predictor",
+        "description": "Analysis of Employee Turnover Rate of a company by building Logistic Regression model and Random Forest Classifier, validated by 10-Fold Cross Validation, completely coded on Python. Conduction of investigation into most influential factors for turnover and exploratory Visualization (seaborn, matplotlib) based on prediction results. Application integrated with IBM Cloud to be deployed as an API.",
+        "stars": 4,
+        "forks": 0,
+        "language": "Jupyter Notebook",
+        "updated": "2023-02-08T15:54:43Z",
+        "topics": [],
+        "source": "GitHub"
+      }
+    ],
+    "discussions": [
+      {
+        "title": "57% of tech industry employees are suffering from job burnout",
+        "url": "https://www.forbes.com/sites/laurencebradford/2018/06/19/why-we-need-to-talk-about-burnout-in-the-tech-industry/#27e4d6a11406",
+        "description": "Discussion in r/technology - 3270 comments",
+        "subreddit": "technology",
+        "score": 22240,
+        "comments": 3270,
+        "created": 1529833215.0,
+        "source": "Reddit"
+      },
+      {
+        "title": "Bragging about keeping Visa workers late into night for basic systems orientation. Apart from potential employee burnout this is simply abuse of power.",
+        "url": "https://i.redd.it/bfhm6gwi201a1.jpg",
+        "description": "Discussion in r/LateStageCapitalism - 210 comments",
+        "subreddit": "LateStageCapitalism",
+        "score": 6528,
+        "comments": 210,
+        "created": 1668885871.0,
+        "source": "Reddit"
+      }
+    ],
+    "articles": [],
+    "other": []
+  },
+  "collection_timestamp": "2025-09-21T05:00:27.435561",
+  "total_resources": 28,
+  "resource_counts": {
+    "papers": 16,
+    "datasets": 0,
+    "code_repos": 10,
+    "discussions": 2,
+    "articles": 0,
+    "other": 0
+  }
+}
